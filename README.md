@@ -1,8 +1,19 @@
 # KodBank - Full-Stack Banking Application
 
-A modern, secure banking web application built with React, Node.js, Express, and MySQL.
+<div align="center">
+  <h3>🏦 A modern, secure banking web application 🏦</h3>
+  <p>Built with React, Node.js, Express, and MySQL</p>
+  
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+  ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+  ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+</div>
 
-## Tech Stack
+---
+
+## 💻 Tech Stack
 
 ### Frontend
 - React.js (Vite)
@@ -18,20 +29,20 @@ A modern, secure banking web application built with React, Node.js, Express, and
 - bcryptjs
 - cookie-parser
 
-## Features
+## ✨ Features
 
-- User Registration & Login
-- JWT Authentication with HttpOnly Cookies
-- View Account Balance
-- Transfer Money Between Users
-- Transaction History
-- Profile Management
-- Password Reset with Security Questions
-- Secure Password Hashing
-- Database Transactions for Transfers
-- Modern Glassmorphism UI
+- 🔐 User Registration & Login
+- 🎫 JWT Authentication with HttpOnly Cookies
+- 💰 View Account Balance
+- 💸 Transfer Money Between Users
+- 📄 Transaction History
+- 👤 Profile Management
+- 🔑 Password Reset with Security Questions
+- 🔒 Secure Password Hashing
+- 📦 Database Transactions for Transfers
+- 🎨 Modern Glassmorphism UI
 
-## Setup Instructions
+## ⚙️ Setup Instructions
 
 ### 1. Database Setup
 
@@ -55,7 +66,7 @@ npm install
 npm run dev
 ```
 
-## API Endpoints
+## 🔗 API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register new user
@@ -70,17 +81,17 @@ npm run dev
 - `PUT /api/profile` - Update profile (Protected)
 - `PUT /api/change-password` - Change password (Protected)
 
-## Security Features
+## 🛡️ Security Features
 
-- Passwords hashed with bcrypt (10 rounds)
-- JWT tokens expire in 1 hour
-- HttpOnly, Secure, SameSite cookies
-- Database transactions for transfers
-- Token validation in database
-- Protected routes with middleware
-- Security questions for password reset
+- 🔐 Passwords hashed with bcrypt (10 rounds)
+- ⏱️ JWT tokens expire in 1 hour
+- 🍪 HttpOnly, Secure, SameSite cookies
+- 📦 Database transactions for transfers
+- ✅ Token validation in database
+- 🚪 Protected routes with middleware
+- ❓ Security questions for password reset
 
-## Deployment Guide
+## 🚀 Deployment Guide
 
 ### Backend Deployment (Vercel)
 
@@ -101,3 +112,10 @@ npm run dev
 ## License
 
 MIT
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Mounesh</p>
+  <p>⭐ Star this repo if you like it!</p>
+</div>
