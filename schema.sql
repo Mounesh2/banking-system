@@ -7,6 +7,8 @@ CREATE TABLE bankuser (
     customer_password VARCHAR(255) NOT NULL,
     account_balance DECIMAL(10,2) DEFAULT 10000.00,
     email VARCHAR(100) UNIQUE NOT NULL,
+    security_question VARCHAR(50) DEFAULT 'pet',
+    security_answer VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

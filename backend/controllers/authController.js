@@ -15,13 +15,14 @@ exports.register = async (req, res) => {
     const hashedPassword = await bcrypt.hash(customer_password, 10);
     const hashedAnswer = await bcrypt.hash(security_answer.toLowerCase(), 10);
     const [result] = await db.query(
-      'INSERT INTO bankuser (customer_name, email, customer_password, account_balance, security_question, security_answer) VALUES (?, ?, ?, 1000.00, ?, ?)',
-      [customer_name, email, hashedPassword, security_question, hashedAnswer]
+      'INSERT INTO bankuser (customer_name, email, customer_password, account_balance, security_question, security_answer) VALUES (?, ?, ?, 10000.00, ?, ?)',
+      [customer_name, email, hashedPassword, security_question || 'pet', hashedAnswer]
     );
 
     res.status(201).json({ message: 'Registration successful', customerId: result.insertId });
   } catch (error) {
-    res.status(500).json({ message: 'Server error' });
+    console.error('Registration error:', error);
+    res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
 
@@ -55,7 +56,8 @@ exports.login = async (req, res) => {
 
     res.json({ message: 'Login successful', user: { customerId: user.customer_id, customerName: user.customer_name, email: user.email } });
   } catch (error) {
-    res.status(500).json({ message: 'Server error' });
+    console.error('Login error:', error);
+    res.status(500).json({ message: 'Server error', error: error.message });
   }
 };
 
