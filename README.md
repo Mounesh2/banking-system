@@ -111,7 +111,7 @@ npm run dev
 
 ## License
 
-MIT
+MP developers 
 
 ---
 
