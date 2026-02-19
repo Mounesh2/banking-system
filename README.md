@@ -44,23 +44,6 @@ A modern, secure banking web application built with React, Node.js, Express, and
 ```bash
 cd backend
 npm install
-```
-
-Create `.env` file:
-```env
-PORT=5000
-DB_HOST=your_db_host
-DB_USER=your_db_user
-DB_PASSWORD=your_password
-DB_NAME=your_db_name
-DB_PORT=3306
-JWT_SECRET=your_super_secret_jwt_key_change_this
-NODE_ENV=development
-FRONTEND_URL=http://localhost:5173
-```
-
-Start backend:
-```bash
 npm run dev
 ```
 
@@ -69,15 +52,6 @@ npm run dev
 ```bash
 cd frontend
 npm install
-```
-
-Create `.env` file:
-```env
-VITE_API_URL=http://localhost:5000
-```
-
-Start frontend:
-```bash
 npm run dev
 ```
 
